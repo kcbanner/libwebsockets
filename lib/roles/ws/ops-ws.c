@@ -695,7 +695,8 @@ utf8_fail:
 			if (n == PMDR_DID_NOTHING ||
 			    n == PMDR_NOTHING_WE_SHOULD_DO
 #if !defined(LWS_WITHOUT_EXTENSIONS)
-				       	||
+					||
+			    n == PMDR_NOTHING_WE_SHOULD_DO ||
 			    n == PMDR_UNKNOWN
 #endif
 			    )
